@@ -1,0 +1,202 @@
+@mixin dashboard-label {
+	
+        @include dashboard-textfield;
+	/* TODO fix in base theme */
+	.v-label {
+		overflow: visible;
+	}
+        
+        .v-label.login-bg {
+        -webkit-animation: fade-in 1600ms ease-out;
+	-moz-animation: fade-in 1600ms ease-out;
+	-ms-animation: fade-in 1600ms ease-out;
+	-o-animation: fade-in 1600ms ease-out;
+	animation: fade-in 1600ms ease-out;
+        }
+	
+	.v-label.h1 {
+		font-size: 36px;
+		line-height: 1;
+		font-weight: 300;
+		-webkit-font-smoothing: antialiased;
+		letter-spacing: -0.05em;
+	/* 	color: #404346; */
+	}
+	
+	.v-label.h2 {
+		color: #404346;
+		font-size: 22px;
+		line-height: 1;
+		font-weight: normal;
+		padding: .5em 0;
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	.v-label.light {
+                font-family: 'Source Sans Pro';
+		color: #979699;
+	}
+        
+        .v-label.loginx {
+            color: #008aff;
+            line-height: 1;
+            font-size: 20px;
+            padding: .5em 0;
+            font-weight: 300;
+            font-family: 'Roboto';
+            letter-spacing: -0.75px;
+        }
+	
+	.v-label.h4 {
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #008aff;
+                //color: #CA364C;
+                line-height: 1;
+                font-size: 20px;
+                font-family: 'Roboto';
+                letter-spacing: -1px;
+	}
+        
+        .v-label.black {
+            background-color: #555555;
+            color: #FFFFFF;
+        }
+        
+        .v-label.headlabel {
+            transform: translate(0, 170%);
+            -webkit-transform: translate(0, 165%);
+            transition: transform .3s ease, font .3s ease, opacity 0.3s ease-in;
+            -webkit-transition: -webkit-transform .3s ease, font .3s ease, opacity 0.3s ease-in;
+            font-family: 'Source Sans Pro';
+            font-size : 16px;
+            font-weight: 300;
+            padding: -30px;
+            color: #4a4252;
+            //-webkit-font-smoothing:antialiased;
+            opacity: 1;
+           
+            //font-smooth: always;
+        }
+        
+        .v-label.headlabel2 {
+            transform: translate(0, 145%);
+            -webkit-transform: translate(0, 125%);
+            transition: transform .3s ease, font .3s ease, opacity 0.3s ease-in;
+            -webkit-transition: -webkit-transform .3s ease, font .3s ease, opacity 0.3s ease-in;
+            font-family: 'Source Sans Pro';
+            font-size : 16px;
+            font-weight: 300;
+            padding: -30px;
+            color: #4a4e52;
+            //-webkit-font-smoothing:antialiased;
+            opacity: 1;
+           
+            //font-smooth: always;
+        }
+        
+        .v-label.animationup {
+            -webkit-transform: translate(0, -5%);
+            transform: translate(0, 0%);
+            font-size: 14px;
+            opacity: 1;
+        }
+        
+        .v-label.animationup2 {
+            -webkit-transform: translate(0, -40%);
+            transform: translate(0, -40%);
+            font-size: 14px;
+            opacity: 1;
+        }
+        
+        .v-label.animationdown {
+            -webkit-transform: translate(0, 170%);
+            transform: translate(0, 165%);
+            font-size: 16px;
+            opacity: 1;
+        }
+        
+        .v-label.animationdown2{
+            -webkit-transform: translate(0, 125%);
+            transform: translate(0, 145%);
+            font-size: 16px;
+            opacity: 1;
+        }
+        
+        .v-label.fading {
+            opacity: 0;
+        }
+        
+        .v-label.darkening {
+            opacity:1;
+        }
+        
+        .v-label.loginlabel {
+            font-family: 'Source Sans Pro';
+            font-weight: 300;
+            padding-top:8px;
+            color: rgb(83, 88, 92);
+            font-size: 22px;
+        }
+        .v-label.tutormatch {
+            font-family: 'Source Sans Pro';
+            font-weight: 400;
+            padding-top:8px;
+            padding-left: 3px;
+            padding-bottom: 5px;
+            //padding-bottom: 1.5px;
+            font-size: 22px;
+            color: rgb(26, 175, 93)
+        }
+        .v-label.tutormatch:hover {
+            padding-top:8px;
+            padding-left: 3px;
+            padding-bottom: 5px;
+            //padding-bottom: 1.5px;
+            font-weight:400;
+            font-size: 22px;
+            color: #2DBEA1;
+        }
+        .v-label.linelabel{
+            border: 0;
+            height: 2.5px;
+            background: #333;
+            background: -webkit-gradient(linear, 0 0, 100% 0, from(#F0F0F0), to(#F0F0F0), color-stop(50%, #E1E1E1));
+            background: linear-gradient(90deg, #F0F0F0, #E1E1E1 50%, #F0F0F0);
+            color: rgb(244, 244, 244);
+            -moz-user-select:none;
+            -webkit-user-select: none;
+        }
+
+        /*.v-label.prompt {
+            font-family:'Source Sans Pro';
+            font-size: 16px;
+            font-weight: 200;
+            color: white;
+            transform: translate(810px,370px);
+        }*/
+
+        
+        /*.v-textfield.username:focus {
+            //background: #000;
+        }*/
+
+        /*.v-label.headlabel:hover {
+            transform: translate(0, 0%);
+        }*/
+        
+        
+        
+        /*.v-label.slidelabel {
+            -moz-transition: translateY()
+        }
+        
+        @keyframes slidelabelanimation {
+            from {
+                
+            }
+            to {
+                translateY(0%);
+            }
+        }*/
+}   
